@@ -75,7 +75,7 @@ export const getUser = (req, res) => {
 };
 
 export const updateUser = async (req, res) => {
-  const { nome, senha, email } = req.body;
+  const { nome, senha } = req.body;
 
   try {
     const db = getConnection();
@@ -83,7 +83,6 @@ export const updateUser = async (req, res) => {
     if (!userFound) return res.sendStatus(404);
 
     userFound.nome = nome;
-    userFound.email = email;
     userFound.senha = senha;
 
     db.data.users.map((user) => (user.id === req.params.id ? userFound : user));
