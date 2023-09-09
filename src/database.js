@@ -14,7 +14,16 @@ export async function createConnection() {
 
   await db.read();
 
-  db.data ||= { users: [] };
+  db.data = { users: [
+    {
+      "id": "39d83cd3-c859-4690-ae31-06669b00d622",
+      "nome": "Automated Terter",
+      "email": "automated@test.com",
+      "senha": "password123",
+      "transacoes": [],
+      "saldo": 0
+    }
+  ] };
 
   await db.write();
 }
