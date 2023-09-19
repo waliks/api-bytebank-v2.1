@@ -7,6 +7,14 @@
       "senha": "password123",
       "transacoes": [],
       "saldo": 0
+    },
+    {
+      "id": "1620f65c-d021-4eab-b561-98ddc4cec4a9",
+      "nome": "automated tester",
+      "email": "automated@test.com",
+      "senha": "123",
+      "transacoes": [],
+      "saldo": 0
     }
   ]
 }
